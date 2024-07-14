@@ -59,6 +59,8 @@ Kết quả : Có phản hồi từ máy tính trong subnet khác.
 
 ## 4.4 Kiểm tra curl từ container inner tới web server badsite
 
+Kết quả: Không thể kết nối
+
 ![image](https://github.com/user-attachments/assets/e9102c53-1691-4fd0-8a50-05840673bcb2)
 
 
