@@ -36,28 +36,28 @@ computers on subnet 172.16.10.0/24 from accessing the badsite.
 iptables -A FORWARD -s 172.16.10.0/24 -d 10.9.0.10 -j REJECT
 
 
-#4 Kiểm tra:
+# 4 Kiểm tra:
 
-##4.1 Kiểm tra truy cập vào web server iweb từ container outsider
+## 4.1 Kiểm tra truy cập vào web server iweb từ container outsider
 
 Kết quả: Không thể kết nối
 
 ![image](https://github.com/user-attachments/assets/4f9717e3-e851-453c-960b-86d8f0ec47ba)
 
-##4.2 Kiểm tra telnet từ container outsider tới router
+## 4.2 Kiểm tra telnet từ container outsider tới router
 
 Kết quả: Không thể kết nối
 
 ![image](https://github.com/user-attachments/assets/fa09e49d-3bed-4a57-9911-a8b8942eeafe)
 
 
-##4.3 Kiểm tra ping từ container inner tới container trong subnet khác
+## 4.3 Kiểm tra ping từ container inner tới container trong subnet khác
 
 Kết quả : Có phản hồi từ máy tính trong subnet khác.
 
 ![image](https://github.com/user-attachments/assets/811fbbd6-9aeb-47d8-8cab-3dca9b2787d3)
 
-##4.4 Kiểm tra curl từ container inner tới web server badsite
+## 4.4 Kiểm tra curl từ container inner tới web server badsite
 
 ![image](https://github.com/user-attachments/assets/e9102c53-1691-4fd0-8a50-05840673bcb2)
 
